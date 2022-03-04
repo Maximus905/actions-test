@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: push-ping
       run: echo "event namr" ${{ github.event_name }}
-      run:echo "event action" ${{ github.event.action }}
+      run: echo "event action" ${{ github.event.action }}
