@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - name: push-ping
-      run: echo "event name" - ${{ github.event_name }} "\nevent action" - ${{ github.event.action }}
+      run: |
+        echo "event name" - ${{ github.event_name }} 
+        echo "event action" - ${{ github.event.action }}
