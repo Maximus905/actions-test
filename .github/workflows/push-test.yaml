@@ -1,0 +1,11 @@
+name: push test
+on:
+  push:
+    branches:
+    - "*"
+jobs:
+  push ping:
+    runs_on: ubuntu-20.04
+    steps:
+    - name: push-ping
+      run: echo "push ping"
