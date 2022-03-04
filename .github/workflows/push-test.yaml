@@ -7,5 +7,5 @@ jobs:
   push ping:
     runs-on: ubuntu-20.04
     steps:
-    - name: push-ping
+    - name: push_ping
       run: echo "push ping"
