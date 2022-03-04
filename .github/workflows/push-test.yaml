@@ -1,9 +1,9 @@
 name: push test
 on:
-  # pull_request_target:
-  #   types: [opened, reopened, synchronize, edited]
-  #   branches:
-  #   - "*"
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited]
+    branches:
+    - "*"
   push:
     branches-ignore:
     - "release-*"
