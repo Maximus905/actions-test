@@ -5,8 +5,8 @@ on:
   #   branches:
   #   - "*"
   push:
-    branches-ignore:
-    - "release-*"
+    branches:
+    - "!release-*"
 jobs:
   push-ping:
     runs-on: ubuntu-20.04
