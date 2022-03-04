@@ -1,13 +1,13 @@
 name: push test
 on:
-  push:
+  pull_request:
     branches:
-    - "*"
+    - "release-*"
 jobs:
   push-ping:
     runs-on: ubuntu-20.04
     steps:
-    - name: push-ping
+    - name: PR
       run: |
         echo "ref name -" ${{ github.ref_name }} 
         echo "event name -" ${{ github.event_name }} 
