@@ -6,7 +6,7 @@ on:
   #   - "*"
   push:
     branches-ignore:
-    - "release-*""
+    - "release-*"
 jobs:
   push-ping:
     runs-on: ubuntu-20.04
