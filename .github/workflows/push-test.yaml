@@ -4,8 +4,8 @@ on:
     branches:
     - "*"
 jobs:
-  push ping:
+  push-ping:
     runs-on: ubuntu-20.04
     steps:
-    - name: push_ping
+    - name: push-ping
       run: echo "push ping"
